@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F5F1E8;
+    color: #252525;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Editorial Micro-styles */
+.paper-border {
+  border: 1.5px solid #252525;
+}
+
+.paper-border-dashed {
+  border: 1.5px dashed #243D35;
+}
+
+.tape-badge {
+  position: relative;
+  background-color: #E9DCA7;
+  color: #243D35;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  transform: rotate(-1deg);
+  box-shadow: 2px 2px 0px rgba(36, 61, 53, 0.25);
+}
+
+.stamp-badge {
+  border: 2px dashed #D98555;
+  color: #D98555;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: rotate(2deg);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECE5D6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #243D35;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D98555;
+}
+
+/* Custom Leaflet styling */
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background: #ECE5D6 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #F5F1E8 !important;
+  border: 1.5px solid #252525 !important;
+  border-radius: 8px !important;
+  box-shadow: 4px 4px 0px #252525 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #252525 !important;
+}
